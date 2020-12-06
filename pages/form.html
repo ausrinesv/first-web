@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Norėtojo anketa</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Apie mus</a></li>
+                <li><a href="form.html">Gyvūno norėtojo anketa</a></li>
+                <li><a href="animal.html">Gyvūnai</a></li>
+                <li><a href="contact.html">Kontaktai</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Norėtojo anketa-->
+
+    <div class="form_title">
+        <h1>GYVŪNO NORĖTOJO ANKETA</h1>
+        <p>Norėdami pasiimti augintinį į globą, užpildykite šią anketą ir mes su Jumis susisieksime.</p>
+    </div>
+
+    <div class="form">
+        <form>
+            <!---->
+            <h3>Jūsų kontaktinė informacija:</h3>
+            <div class="contact_info">
+                <label for="name">Vardas</label>
+                <input type="text" name="name" id="name" required />
+                <label for="surname">Pavardė</label>
+                <input type="text" name="surname" id="surname" required />
+                <label for="city">Miestas</label>
+                <input type="text" name="city" id="city" required />
+                <label for="phone">Telefono nr.</label>
+                <input type="text" name="phone" id="phone" required />
+                <label for="email">El. paštas</label>
+                <input type="email" name="email" id="email" required />
+                <label for="birthday">Gimimo data</label>
+                <input type="date" id="birthday" name="birthday" required>
+                <!-- <input type="submit" value="Patvirtinti">  -->
+            </div>
+
+            <!---->
+            <h3>Atsakykite į žemiau pateiktus klausimus:</h3>
+            <div class="other_info">
+                <label class="required" for="had_pets">Ar esate turėję\turite augintinių?</label><br>
+                <input type="radio" name="had_pets" id="had_pets" required />
+                <label for="yes">Taip</label>
+                <input type="radio" name="had_pets" id="hadnt_pets" required />
+                <label for="no">Ne</label><br>
+            </div>
+
+            <div class="other_info">
+                <label class="required" for="pet_type">Kokį augintinį norite įsigyti?</label><br>
+                <input type="radio" name="type" id="cat" required />
+                <label for="cat">Katę</label>
+                <input type="radio" name="type" id="dog" />
+                <label for="dog">Šunį</label>
+                <input type="radio" name="type" id="other" />
+                <label for="other">Kitą</label>
+            </div>
+
+            <div class="other_info">
+                <label class="required" for="pet_sex">Kokios lyties augintinio norite?</label><br>
+                <input type="radio" name="sex" id="female" required />
+                <label for="female">Patelės</label>
+                <input type="radio" name="sex" id="male" />
+                <label for="male">Patinėlio</label>
+                <input type="radio" name="sex" id="doesnt_matter" />
+                <label for="doesnt_matter">Nesvarbu</label>
+            </div>
+
+            <div class="other_info">
+                <label for="pet_age">Kokio amžiaus augintinio norite?</label><br>
+                <input type="checkbox" name="pet_age" id="1-6"/>
+                <label for="1-6">1-6 mėn.</label><br>
+                <input type="checkbox" name="pet_age" id="6-12" />
+                <label for="6-12">6-12 mėn.</label><br>
+                <input type="checkbox" name="pet_age" id=">3" />
+                <label for=">3">Daugiau kaip 3 metų</label><br>
+                <input type="checkbox" name="pet_age" id="dont_matter" />
+                <label for="cat">Nesvarbu</label><br>
+            </div>
+
+            <div class="other_info">
+                <label class="required" for="housing">Koks Jūsų gyvenamasis būstas?</label><br>
+                <input type="radio" name="housing" id="appartment" required />
+                <label for="cat">Nuosavas butas</label><br>
+                <input type="radio" name="housing" id="rent" />
+                <label for="dog">Nuomuojamas butas</label><br>
+                <input type="radio" name="housing" id="house" />
+                <label for="other">Nuosavas namas</label><br>
+                <input type="radio" name="housing" id="other_housing" />
+                <label for="other">Kita</label>
+            </div>
+
+            <div class="other_info">
+                <label for="kids">Ar auginate vaikus? Jei taip, kokio amžiaus?</label><br>
+                <input type="text" name="kids" id="kids"/>
+            </div>
+
+            <div class="other_info">
+                <label class="required" for="food">Kur planuojate pirkti maistą?</label><br>
+                <input type="text" name="food" id="food" required />
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Pateikti" />
+            </div>
+        </form>
+    </div>
+    <footer id="footer">© Pawnies</footer>
+</body>
+
+</html>
